@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1 class="heading">Temperature Converter</h1>
+ <div class="temp-container">
+ <label for="Celsius">Celsius :</label>
+ <input 
+ onchange="computeTemp(event)"
+ type="number" 
+ name="Celsius" 
+ id="Celsius" 
+ class="Celsius" 
+ placeholder="Enter Temperature">
+ </div>
+       <div class="temp-container">
+       <label for="Fahrenheit">Fahrenheit :</label>
+       <input 
+       onchange="computeTemp(event)"
+       type="number" 
+       name="Fahrenheit" 
+       id="Fahrenheit" 
+       class="Fahrenheit" 
+       placeholder="Enter Temperature">
+       </div>
+        
+<div class="temp-container">
+ <label for="Kelvin">Kelvin :</label>
+<input 
+onchange="computeTemp(event)"
+type="number" 
+name="Kelvin" 
+id="Kelvin" 
+class="Kelvin" 
+placeholder="Enter Temperature">
+</div>
+</div>
+
+    <script src="index.js"></script>
+<script>
+    VANTA.NET({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+    </script>
+</body>
+</html>
